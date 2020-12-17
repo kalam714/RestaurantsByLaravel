@@ -7,6 +7,13 @@
       </div>
     </div>
   </footer>
+  
+  <script>
+    function confirmDelete(){
+      return confirm('Are You Sure To Delete This?')
+
+    }
+  </script>
   <!-- Footer -->
 </div>
 </div>
