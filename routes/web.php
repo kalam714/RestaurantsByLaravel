@@ -22,6 +22,14 @@ Route::get('/reservation', function () {
 Route::get('/admin/index',function(){
     return view('admin.index');
 });
+
+//food section
+Route::get('/getFood','App\Http\Controllers\FrontendController@getFood')->name('get.food');
+Route::get('/search-food','App\Http\Controllers\FrontendController@getFood')->name('search.food');
+Route::get('/viewSingleFood/{id}','App\Http\Controllers\FrontendController@singleFood')->name('single.food');
+
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -13,7 +13,7 @@
        
 
         <ul class="navbar-nav navbar-right">
-            <li><a href="#">Food</a></li>
+            <li><a href="{{route('get.food')}}">Food</a></li>
             <li><a href="/reservation">Reservation</a></li>
             <li><a href="/">Restaurants</a></li>
             <li><a href="">Special Offers</a></li>
