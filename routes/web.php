@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.index');
 });
+Route::get('/reservation', function () {
+    return view('frontend.layouts.reservation');
+})->name('reservation');
 Route::get('/admin/index',function(){
     return view('admin.index');
 });
