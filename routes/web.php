@@ -23,3 +23,6 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('food','App\Http\Controllers\FoodController');
+Route::resource('offer','App\Http\Controllers\OfferController');
+Route::resource('chef','App\Http\Controllers\ChefController');
+Route::resource('slider','App\Http\Controllers\SliderController');

@@ -31,24 +31,46 @@
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
-        aria-controls="collapseTable">
-        <i class="fas fa-fw fa-table"></i>
-        <span>Tables</span>
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm2" aria-expanded="true"
+        aria-controls="collapseForm2">
+        <i class="fab fa-fw fa-wpforms"></i>
+        <span>Offer</span>
       </a>
-      <div id="collapseTable" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
+      <div id="collapseForm2" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">Tables</h6>
-          <a class="collapse-item" href="simple-tables.html">Simple Tables</a>
-          <a class="collapse-item" href="datatables.html">DataTables</a>
+          
+          <a class="collapse-item" href="{{route('offer.index')}}">Offer List</a>
+          <a class="collapse-item" href="{{route('offer.create')}}">Give Offer</a>
         </div>
       </div>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="ui-colors.html">
-        <i class="fas fa-fw fa-palette"></i>
-        <span>UI Colors</span>
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm3" aria-expanded="true"
+        aria-controls="collapseForm3">
+        <i class="fab fa-fw fa-wpforms"></i>
+        <span>Chef</span>
       </a>
+      <div id="collapseForm3" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          
+          <a class="collapse-item" href="{{route('chef.index')}}">Chef List</a>
+          <a class="collapse-item" href="{{route('chef.create')}}">Add Chef</a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseForm4" aria-expanded="true"
+        aria-controls="collapseForm4">
+        <i class="fab fa-fw fa-wpforms"></i>
+        <span>Slider</span>
+      </a>
+      <div id="collapseForm4" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          
+          <a class="collapse-item" href="{{route('slider.index')}}">Slider List</a>
+          <a class="collapse-item" href="{{route('slider.create')}}">Add Slider</a>
+        </div>
+      </div>
     </li>
     <hr class="sidebar-divider">
     <div class="sidebar-heading">
