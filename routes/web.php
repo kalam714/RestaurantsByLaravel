@@ -14,12 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','App\Http\Controllers\FrontendController@index');
-Route::get('/reservation', function () {
-    return view('frontend.layouts.reservation');
-})->name('reservation');
-Route::get('/admin/index',function(){
-    return view('admin.index');
-});
+
 
 //food section
 Route::get('/getFood','App\Http\Controllers\FrontendController@getFood')->name('get.food');
@@ -43,6 +38,13 @@ Route::post('/submitOrder','App\Http\Controllers\OrderController@OrderSubmit')->
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::group(['prefix'=>'auth','middleware'=>['auth','admin']],function(){
+
+    Route::get('/admin/index', function () {
+        return view('admin.index');
+    })->name('admin.deshboard');
 Route::resource('food','App\Http\Controllers\FoodController');
 Route::resource('offer','App\Http\Controllers\OfferController');
 Route::resource('chef','App\Http\Controllers\ChefController');
@@ -51,3 +53,6 @@ Route::get('getReservationAdminSection','App\Http\Controllers\ReservationControl
 Route::delete('destroyReservation/{id}','App\Http\Controllers\ReservationController@destroy')->name('reservation.destroy');
 Route::get('getOrderAdminSection','App\Http\Controllers\OrderController@getOrder')->name('admin.order');
 Route::delete('destroyOrder/{id}','App\Http\Controllers\OrderController@destroy')->name('order.destroy');
+Route::get('/getAdmin','App\Http\Controllers\HomeController@getAdmin')->name('get.admin');
+Route::delete('/destroyAdmin/{id}','App\Http\Controllers\HomeController@destroyAdmin')->name('admin.destroy');
+});

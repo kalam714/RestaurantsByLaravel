@@ -93,30 +93,30 @@
             <div class="row text-center services-3">
                 <div class="col-sm-3">
                     <div class="col-wrapper">
-                    <div class="icon-border bm10"> <i class="fa fa-beer"></i> </div>
-                    <h4>796518</h4>
-                    <p>Mug of Beer Sold</p>
+                    <div class="icon-border bm10"> <i class="fas fa-hamburger"></i> </div>
+                    <h4>{{App\Models\Food::get()->count()}}</h4>
+                    <p>Number Of items</p>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="col-wrapper">
-                    <div class="icon-border bm10"> <i class="fa fa-play-circle-o"></i> </div>
-                    <h4>39472</h4>
-                    <p>Movies Watched</p>
+                    <div class="icon-border bm10"> <i class="fas fa-money-check"></i> </div>
+                    <h4>{{App\Models\Offer::all()->count()}}</h4>
+                    <p>Special Offer Runnning</p>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="col-wrapper">
-                    <div class="icon-border bm10"> <i class="fa fa-truck"></i> </div>
-                    <h4>2188764</h4>
-                    <p>Pizza Deleverd</p>
+                    <div class="icon-border bm10"> <i class="fas fa-sort-amount-up"></i> </div>
+                    <h4>{{App\Models\Order::all()->count()}}</h4>
+                    <p>Total Order</p>
                 </div>
             </div>
             <div class="col-sm-3">
                 <div class="col-wrapper">
                     <div class="icon-border bm10"> <i class="fa fa-users"></i> </div>
-                    <h4>480523</h4>
-                    <p>Customers Worldwide</p>
+                    <h4>{{App\Models\Chef::all()->count()}}</h4>
+                    <p>Number Of Chefs</p>
                     </div>
                 </div>
             </div>

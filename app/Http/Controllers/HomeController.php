@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -15,6 +16,16 @@ class HomeController extends Controller
     {
         $this->middleware('auth');
     }
+    public function getAdmin(){
+        $users=User::all();
+        return view('admin.user',compact('users'));
+    }
+
+    public function destroyAdmin($id){
+        $user=User::find($id);
+        $user->delete();
+        return redirect()->back();
+    }
 
     /**
      * Show the application dashboard.
@@ -23,6 +34,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('admin.index');
     }
 }
