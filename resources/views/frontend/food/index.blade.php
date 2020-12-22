@@ -35,7 +35,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group">
                           <a href="{{route('single.food',[$food->id])}}"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
-                      <a href=""> <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
+                      <a href="{{route('order',[$food->id])}}"> <button type="button" class="btn btn-sm btn-outline-secondary">Order Now</button></a>
                       </div>
                       <strong class="text-muted">BDT. {{$food->price}}</strong>
                     </div>

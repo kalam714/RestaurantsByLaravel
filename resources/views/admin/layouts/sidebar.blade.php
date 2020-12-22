@@ -72,6 +72,20 @@
         </div>
       </div>
     </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="{{route('admin.reservation')}}">
+        <i class="fab fa-fw fa-wpforms"></i>
+        <span>Reservation</span>
+      </a>
+     
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="{{route('admin.order')}}">
+        <i class="fab fa-fw fa-wpforms"></i>
+        <span>Order</span>
+      </a>
+     
+    </li>
     <hr class="sidebar-divider">
     <div class="sidebar-heading">
       Examples

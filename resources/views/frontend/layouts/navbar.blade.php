@@ -14,9 +14,10 @@
 
         <ul class="navbar-nav navbar-right">
             <li><a href="{{route('get.food')}}">Food</a></li>
-            <li><a href="/reservation">Reservation</a></li>
+            <li><a href="{{route('reservation')}}">Reservation</a></li>
             <li><a href="/">Restaurants</a></li>
-            <li><a href="">Special Offers</a></li>
+            <li><a href="{{route('offer.food')}}">Special Offers</a></li>
+            <li><a href="{{route('our.chefs')}}">Our Chefs</a></li>
             <!--fix for scroll spy active menu element-->
             <li style="display:none;"><a href="#header"></a></li>
 

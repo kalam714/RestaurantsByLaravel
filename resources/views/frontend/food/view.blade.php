@@ -38,7 +38,7 @@
 <hr>
 	
 	
-<a href=""> <button type="button" class="btn btn-sm btn-outline-secondary">Add To Cart</button></a>
+<a href="{{route('order',[$food->id])}}"> <button type="button" class="btn btn-sm btn-outline-secondary">Order Now</button></a>
 </section> 
 		</aside> 
 

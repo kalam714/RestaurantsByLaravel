@@ -18,10 +18,15 @@
     <link rel="stylesheet" href="{{asset('frontend/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/main.css')}}">
 
+    
     <!-- google font -->
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Kreon:300,400,700'>
     
     <!-- js -->
     <script src="{{asset('frontend/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js')}}"></script>
 </head>
+@notifyCss
+<x:notify-messages />
+@notifyJs
 <body data-spy="scroll" data-target="#navbar" data-offset="120" >
+   
